@@ -177,8 +177,8 @@ spec:
           value:  {{ .Values.MEMORY_LIMIT | quote }}
         - name: MAX_MEMORY_LIMIT
           value:  {{ .Values.MAX_MEMORY_LIMIT | quote }}
-        - name: STACK_LIMIT=
-          value:  {{ .Values.STACK_LIMIT= | quote }}
+        - name: STACK_LIMIT
+          value:  {{ .Values.STACK_LIMIT | quote }}
         - name: MAX_STACK_LIMIT
           value:  {{ .Values.MAX_STACK_LIMIT | quote }}
         - name: MAX_PROCESSES_AND_OR_THREADS
@@ -382,8 +382,8 @@ spec:
           value:  {{ .Values.MEMORY_LIMIT | quote }}
         - name: MAX_MEMORY_LIMIT
           value:  {{ .Values.MAX_MEMORY_LIMIT | quote }}
-        - name: STACK_LIMIT=
-          value:  {{ .Values.STACK_LIMIT= | quote }}
+        - name: STACK_LIMIT
+          value:  {{ .Values.STACK_LIMIT | quote }}
         - name: MAX_STACK_LIMIT
           value:  {{ .Values.MAX_STACK_LIMIT | quote }}
         - name: MAX_PROCESSES_AND_OR_THREADS
