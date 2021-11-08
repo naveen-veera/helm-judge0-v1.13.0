@@ -75,7 +75,7 @@ spec:
         - name: INTERVAL
           value:  {{ .Values.INTERVAL | quote }}
         - name: COUNT
-          value:  {{ .Values.COUNT | quote }}
+          value:  {{ .Values.COUNT }}
         {{- if .Values.redis.enabled }} 
         - name: REDIS_HOST
           value: {{ template "judge0.redis.fullname" . }}-master
