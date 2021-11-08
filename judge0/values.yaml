@@ -124,7 +124,7 @@ INTERVAL:
 
 # Specify how many parallel workers to run.
 # Default: 1
-COUNT:
+COUNT: 5*nproc
 
 # Specify maximum queue size. Represents maximum number of submissions that
 # can wait in the queue at once. If request for new submission comes and the

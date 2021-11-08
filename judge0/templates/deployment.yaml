@@ -212,7 +212,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service | quote }}
 spec:
-  replicas: {{  .Values.COUNT }}
+  replicas: 1
   selector:
     matchLabels:
       app: {{ .Chart.Name }}
