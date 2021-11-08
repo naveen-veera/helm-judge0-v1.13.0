@@ -236,6 +236,8 @@ spec:
         - -c
         - while true; do rails resque:work; done
         env:
+        - name: QUEUE
+          value: critical,high rake resque:work
         - name: JUDGE0_TELEMETRY_ENABLE
           value: {{  .Values.JUDGE0_TELEMETRY_ENABLE | quote }}
         - name: RESTART_MAX_TRIES
